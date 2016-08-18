@@ -1,0 +1,248 @@
+{
+    "id": "4344",
+    "name": "Telesummit Template",
+    "mobile": true,
+    "notes": "Made icons hideable, fixed text overflow issues, cleared image override interfering with map, added code to map for improved visibility in editor and published views.",
+    "syntax": 4,
+    "version": 1.01,
+    "style": {
+        "replacements": [
+            {"type": "font", "name": "Font #1", "find": "'Source Sans Pro'"},
+            {"type": "font", "name": "Font #2", "find": "'Bitter'"},
+
+            {"type": "color", "find": "#000001", "name": "General Text"},
+            {"type": "color", "find": "#d69247", "name": "Accent Color"},
+            {"type": "color", "find": "#feffff", "name": "Button Text"},
+            {"type": "color", "find": "#232423", "name": "Vertical Rule Line"},
+            {"type": "color", "find": "#232324", "name": "Header Background"},
+            {"type": "color", "find": "#fffeff", "name": "Header Text"},
+            {"type": "color", "find": "#fffffe", "name": "Contact Bar Background"},
+            {"type": "color", "find": "#7f7f7e", "name": "Contact Bar Text"},
+            {"type": "color", "find": "#cdcccc", "name": "Banner Background (No Image)"},
+            {"type": "color", "find": "#fefeff", "name": "Banner Text"},
+            {"type": "color", "find": "#fffefe", "name": "About Background"},
+            {"type": "color", "find": "#242323", "name": "Details Background"},
+            {"type": "color", "find": "#fefefd", "name": "Details Text"},
+            {"type": "color", "find": "#fdfefe", "name": "Profiles Background"},
+            {"type": "color", "find": "#7f7e7f", "name": "Profile Social Icons"},
+            {"type": "color", "find": "#f4f4f5", "name": "Testimonials Background"},
+            {"type": "color", "find": "#232322", "name": "Testimonial Border"},
+            {"type": "color", "find": "#242423", "name": "Call to Action Background"},
+            {"type": "color", "find": "#fefdfe", "name": "Call to Action Text"},
+            {"type": "color", "find": "#242324", "name": "Footer Background"},
+            {"type": "color", "find": "#fefdfd", "name": "Footer Text"},
+            {"type": "color", "find": "#fdfdfe", "name": "Copyright Line"}
+        ]
+    },
+    "variables": {
+        "googleMapAddress": {
+          "variable": "googleMapAddress",
+          "dafault": "",
+          "name": "Enter your location address. Publish your page to view the map."
+        }
+    },
+    "elements": [
+        {"id": "header", "name": "Header", "type": "container"},
+        {"id": "logo", "type": "image-link", "name": "Logo", "data": { "max-width": 250 } },
+        {"id": "nav", "name": "Navigation", "type": "container"},
+        {"id": "nav-link-1", "name": "Link 1 (#section1)", "type": "link"},
+        {"id": "nav-link-2", "name": "Link 2 (#section2)", "type": "link"},
+        {"id": "nav-link-3", "name": "Link 3 (#section3)", "type": "link"},
+        {"id": "nav-link-4", "name": "Link 4 (#section4)", "type": "link"},
+        {"id": "nav-link-5", "name": "Link 5 (#section5)", "type": "link"},
+
+
+
+        {"id": "contact-bar", "name": "Contact Bar", "type": "container"},
+        {"id": "contact-tagline", "name": "Tagline", "type": "text"},
+        {"id": "contact-phone-wrapper", "name": "Phone Container", "type": "container"},
+        {"id": "contact-phone-icon", "name": "Phone Icon", "type": "container"},
+        {"id": "contact-phone", "name": "Phone", "type": "text"},
+        {"id": "contact-email-wrapper", "name": "Email Container", "type": "container"},
+        {"id": "contact-email-icon", "name": "Email Icon", "type": "container"},
+        {"id": "contact-email", "name": "Email", "type": "text"},
+
+
+
+        {"id": "banner", "name": "Banner", "type": "container"},
+        {"id": "banner-bg", "name": "Banner Image", "type": "background-image"},
+        {"id": "banner-title", "name": "Title", "type": "text"},
+        {"id": "banner-text", "name": "Text", "type": "text"},
+        {"id": "banner-btn", "name": "Button", "type": "link", "data": {"href": "#/optin"} },
+
+
+
+        {"id": "about", "name": "About", "type": "container"},
+        {"id": "about-left", "name": "Left Column", "type": "container"},
+        {"id": "about-lead", "name": "Lead", "type": "text"},
+        {"id": "about-title", "name": "Title", "type": "text"},
+        {"id": "about-text-1", "name": "Text", "type": "text"},
+        {"id": "about-right", "name": "Right Column", "type": "container"},
+        {"id": "about-text-2", "name": "Text", "type": "text"},
+        {"id": "about-vr", "name": "Vertical Line", "type": "container"},
+
+
+
+        {"id": "details", "name": "Details", "type": "container"},
+        {"id": "details-title", "name": "Title", "type": "text"},
+        {"id": "details-title-line", "name": "Title Line", "type": "container"},
+
+        {"id": "detail-1", "name": "Detail #1", "type": "container"},
+        {"id": "detail-1-img", "type": "image", "name": "Image", "data": { "max-width": 198 } },
+        {"id": "detail-1-title", "name": "Title", "type": "text"},
+        {"id": "detail-1-text", "name": "Text", "type": "text"},
+
+        {"id": "detail-2", "name": "Detail #2", "type": "container"},
+        {"id": "detail-2-img", "type": "image", "name": "Image", "data": { "max-width": 198 } },
+        {"id": "detail-2-title", "name": "Title", "type": "text"},
+        {"id": "detail-2-text", "name": "Text", "type": "text"},
+
+        {"id": "detail-3", "name": "Detail #3", "type": "container"},
+        {"id": "detail-3-img", "type": "image", "name": "Image", "data": { "max-width": 198 } },
+        {"id": "detail-3-title", "name": "Title", "type": "text"},
+        {"id": "detail-3-text", "name": "Text", "type": "text"},
+
+
+
+
+        {"id": "profiles", "name": "Profiles", "type": "container"},
+        {"id": "profiles-title", "name": "Title", "type": "text"},
+        {"id": "profiles-title-line", "name": "Title Line", "type": "container"},
+
+        {"id": "profile-1", "name": "Profile #1", "type": "container"},
+        {"id": "profile-1-img", "type": "image", "name": "Image", "data": { "max-width": 237 } },
+        {"id": "profile-1-title", "name": "Title", "type": "text"},
+        {"id": "profile-1-text", "name": "Text", "type": "text"},
+        {"id": "profile-1-contact", "name": "Contact", "type": "container"},
+        {"id": "profile-1-facebook", "name": "Facebook Icon", "type": "container"},
+        {"id": "profile-1-facebook-link", "name": "Link", "type": "link"},
+        {"id": "profile-1-twitter", "name": "Twitter Icon", "type": "container"},
+        {"id": "profile-1-twitter-link", "name": "Link", "type": "link"},
+        {"id": "profile-1-linkedin", "name": "LinkedIn Icon", "type": "container"},
+        {"id": "profile-1-linkedin-link", "name": "Link", "type": "link"},
+        {"id": "profile-1-email", "name": "Email Icon", "type": "container"},
+        {"id": "profile-1-email-link", "name": "Link", "type": "link"},
+        {"id": "profile-1-phone", "name": "Phone Icon", "type": "container"},
+        {"id": "profile-1-phone-link", "name": "Link (tel:###)", "type": "link"},
+
+        {"id": "profile-2", "name": "Profile #2", "type": "container"},
+        {"id": "profile-2-img", "type": "image", "name": "Image", "data": { "max-width": 237 } },
+        {"id": "profile-2-title", "name": "Title", "type": "text"},
+        {"id": "profile-2-text", "name": "Text", "type": "text"},
+        {"id": "profile-2-contact", "name": "Contact", "type": "container"},
+        {"id": "profile-2-facebook", "name": "Facebook Icon", "type": "container"},
+        {"id": "profile-2-facebook-link", "name": "Link", "type": "link"},
+        {"id": "profile-2-twitter", "name": "Twitter Icon", "type": "container"},
+        {"id": "profile-2-twitter-link", "name": "Link", "type": "link"},
+        {"id": "profile-2-linkedin", "name": "LinkedIn Icon", "type": "container"},
+        {"id": "profile-2-linkedin-link", "name": "Link", "type": "link"},
+        {"id": "profile-2-email", "name": "Email Icon", "type": "container"},
+        {"id": "profile-2-email-link", "name": "Link", "type": "link"},
+        {"id": "profile-2-phone", "name": "Phone Icon", "type": "container"},
+        {"id": "profile-2-phone-link", "name": "Link (tel:###)", "type": "link"},
+
+        {"id": "profile-3", "name": "Profile #3", "type": "container"},
+        {"id": "profile-3-img", "type": "image", "name": "Image", "data": { "max-width": 237 } },
+        {"id": "profile-3-title", "name": "Title", "type": "text"},
+        {"id": "profile-3-text", "name": "Text", "type": "text"},
+        {"id": "profile-3-contact", "name": "Contact", "type": "container"},
+        {"id": "profile-3-facebook", "name": "Facebook Icon", "type": "container"},
+        {"id": "profile-3-facebook-link", "name": "Link", "type": "link"},
+        {"id": "profile-3-twitter", "name": "Twitter Icon", "type": "container"},
+        {"id": "profile-3-twitter-link", "name": "Link", "type": "link"},
+        {"id": "profile-3-linkedin", "name": "LinkedIn Icon", "type": "container"},
+        {"id": "profile-3-linkedin-link", "name": "Link", "type": "link"},
+        {"id": "profile-3-email", "name": "Email Icon", "type": "container"},
+        {"id": "profile-3-email-link", "name": "Link", "type": "link"},
+        {"id": "profile-3-phone", "name": "Phone Icon", "type": "container"},
+        {"id": "profile-3-phone-link", "name": "Link (tel:###)", "type": "link"},
+
+
+
+        {"id": "testimonials", "name": "Testimonials", "type": "container"},
+        {"id": "testimonials-left", "name": "Left Column", "type": "container"},
+        {"id": "testimonial-left-title", "name": "Title", "type": "text"},
+
+        {"id": "testimonial-1", "name": "Testimonial #1", "type": "container"},
+        {"id": "testimonial-1-img", "type": "image", "name": "Image", "data": { "max-width": 64 } },
+        {"id": "testimonial-1-text", "name": "Text", "type": "text"},
+        {"id": "testimonial-1-title", "name": "Name/Title", "type": "text"},
+
+        {"id": "testimonial-2", "name": "Testimonial #2", "type": "container"},
+        {"id": "testimonial-2-img", "type": "image", "name": "Image", "data": { "max-width": 64 } },
+        {"id": "testimonial-2-text", "name": "Text", "type": "text"},
+        {"id": "testimonial-2-title", "name": "Name/Title", "type": "text"},
+
+        {"id": "testimonial-3", "name": "Testimonial #3", "type": "container"},
+        {"id": "testimonial-3-img", "type": "image", "name": "Image", "data": { "max-width": 64 } },
+        {"id": "testimonial-3-text", "name": "Text", "type": "text"},
+        {"id": "testimonial-3-title", "name": "Name/Title", "type": "text"},
+
+        {"id": "testimonials-right", "name": "Right Column", "type": "container"},
+        {"id": "testimonial-right-title", "name": "Title", "type": "text"},
+        {"id": "testimonial-right-text", "name": "Text", "type": "text"},
+
+        {"id": "testimonial-vr", "name": "Vertical Line", "type": "container"},
+
+
+
+        {"id": "cta", "name": "Call to Action", "type": "container"},
+        {"id": "cta-title", "name": "Title", "type": "text"},
+        {"id": "cta-title-line", "name": "Title Line", "type": "container"},
+        {"id": "cta-text", "name": "Text", "type": "text"},
+        {"id": "cta-btn", "name": "Button", "type": "link", "data": {"href": "#/optin"} },
+
+
+
+        {"id": "map", "name": "Map", "type": "container"},
+        {"id": "map-canvas", "type": "dynamic", "name": "Location", "data": { "variables": ["googleMapAddress"] } },
+
+
+
+        {"id": "footer", "name": "Footer", "type": "container"},
+
+        {"id": "footer-contact", "name": "Contact Info", "type": "container"},
+        {"id": "footer-col-1", "name": "Column #1", "type": "container"},
+        {"id": "footer-logo", "type": "image-link", "name": "Logo", "data": { "max-width": 250 } },
+        {"id": "footer-logo-text", "name": "Text", "type": "text"},
+
+        {"id": "footer-contact-title", "name": "Contact Title", "type": "text"},
+        {"id": "footer-phone-wrapper", "name": "Phone Container", "type": "container"},
+        {"id": "footer-phone-icon", "name": "Phone Icon", "type": "container"},
+        {"id": "footer-phone", "name": "Phone", "type": "text"},
+        {"id": "footer-email-wrapper", "name": "Email Container", "type": "container"},
+        {"id": "footer-email-icon", "name": "Email Icon", "type": "container"},
+        {"id": "footer-email", "name": "Email", "type": "text"},
+
+        {"id": "footer-col-2", "name": "Column #2", "type": "container"},
+        {"id": "footer-location-title", "name": "Location Title", "type": "text"},
+        {"id": "footer-location-wrapper", "name": "Location Container", "type": "container"},
+        {"id": "footer-location-icon", "name": "Location Icon", "type": "container"},
+        {"id": "footer-location", "name": "Location", "type": "text"},
+
+        {"id": "footer-hours-title", "name": "Hours Title", "type": "text"},
+        {"id": "footer-hours-wrapper", "name": "Hours Container", "type": "container"},
+        {"id": "footer-hours-icon", "name": "Hours Icon", "type": "container"},
+        {"id": "footer-hours", "name": "Hours", "type": "text"},
+
+        {"id": "footer-col-3", "name": "Column #3", "type": "container"},
+        {"id": "footer-mission-title", "name": "Title", "type": "text"},
+        {"id": "footer-mission-text", "name": "Text", "type": "text"},
+
+        {"id": "footer-legal", "name": "Social/Legal Info", "type": "container"},
+        {"id": "footer-social", "name": "Social Icons", "type": "container"},
+        {"id": "social-facebook", "name": "Facebook Icon", "type": "container"},
+        {"id": "social-facebook-link", "name": "Link", "type": "link"},
+        {"id": "social-twitter", "name": "Twitter Icon", "type": "container"},
+        {"id": "social-twitter-link", "name": "Link", "type": "link"},
+        {"id": "social-linkedin", "name": "LinkedIn Icon", "type": "container"},
+        {"id": "social-linkedin-link", "name": "Link", "type": "link"},
+        {"id": "social-email", "name": "Email Icon", "type": "container"},
+        {"id": "social-email-link", "name": "Link", "type": "link"},
+        {"id": "social-phone", "name": "Phone Icon", "type": "container"},
+        {"id": "social-phone-link", "name": "Link", "type": "link"},
+
+        {"id": "copyright", "name": "Copyright", "type": "text"}
+    ],
+    "form": {}
+}
