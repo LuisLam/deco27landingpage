@@ -547,7 +547,7 @@ img {
 		font-size: 55px;
 	}
 	.contact-bar .contact-line {
-		margin-left: 60px;
+		margin-left: none;
 	}
 	.banner {
 		padding: 85px 0;
@@ -569,6 +569,7 @@ img {
 	.contact-bar .contact-line {
 		display: inline-block;
 		max-width: 100%;
+		margin-left: 60px;
 	}
 	.banner {
 		padding: 115px 0;
