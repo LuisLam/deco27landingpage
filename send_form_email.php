@@ -3,7 +3,7 @@ if(isset($_POST['email'])) {
  
     // EDIT THE 2 LINES BELOW AS REQUIRED
     $email_to = "luis@dvlper.com";
-    $email_subject = "Consultation Request";
+    $email_subject = "Your email subject line";
  
     function died($error) {
         // your error code can go here
@@ -63,7 +63,7 @@ $headers = 'From: '.$email_from."\r\n".
 'X-Mailer: PHP/' . phpversion();
 @mail($email_to, $email_subject, $email_message, $headers);
 sleep(2);
-echo "<meta http-equiv='refresh' content=\"0; url=http://www.deco27.net/\">";
+echo "<meta http-equiv='refresh' content=\"0; url=http://tutsme-webdesign.info/index.php\">";
 ?>
  
 <?php
