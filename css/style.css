@@ -236,7 +236,7 @@ h4.lined {
     margin: 20px auto 60px;
 }
 h5 {
-	color: #c0242b;
+	color: #fff;
 	font-size: 16px;
 	letter-spacing: 2px;
 	margin-bottom: 15px;
@@ -251,11 +251,7 @@ p.lg {
 	line-height: 1.8;
 }
 a {
-	color: #d69247;
-}
-a:hover, a:focus {
-	color: #d69247;
-
+	color: #fff;
 }
 img {
 	max-width: 100%;
@@ -374,7 +370,7 @@ img {
 	max-width: 100% !important;
 }
 .profiles {
-	background: #fdfefe;
+	background: rgba(0,0,0,0.38);
 }
 .profiles .fill {
     max-width: 280px;
@@ -385,7 +381,7 @@ img {
 	max-width: 100% !important;
 }
 .profiles .icon-list {
-	color: #7f7e7f;
+	color: #fff;
     margin: 0;
     padding: 0;
     list-style-type: none;
@@ -442,6 +438,7 @@ img {
 }
 #map_canvas {
 	height: 340px;
+	text-align: center;
 }
 .footer {
 	color: #fefdfd;
@@ -501,15 +498,21 @@ img {
 .footer-legal .footer-list li {
     display: inline-block;
     position: relative;
-    width: 27px;
-    height: 27px;
-    padding: 1px 0;
+    width: 32px;
+    height: 32px;
+    padding: 3px 0;
     margin: 0 5px;
     font-size: 18px;
     vertical-align: middle;
     text-align: center;
-    background: #d69247;
-    color: #242324;
+    color: #ebebeb;
+    border: 1px solid #ebebeb;
+    transition: all 0.5s ease 0s;
+}
+.footer-legal .footer-list li:hover {
+	background: #C02C32;
+	border: 1px solid #C02C32;
+
 }
 .footer-legal .footer-list li:first-child {
 	margin-left: 0;
@@ -583,4 +586,15 @@ img {
 	background-color: #fff;
     padding-top: 90px;
     padding-bottom: 90px;
+}
+
+.client-item {
+	padding: 15px;
+}
+
+.client.client-grid {
+    overflow: hidden;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+    border-top: 1px solid #fff;
 }
